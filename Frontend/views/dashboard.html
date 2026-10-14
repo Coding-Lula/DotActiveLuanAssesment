@@ -1,73 +1,327 @@
-<div class="container py-4">
-    <!-- Header Section with Pill Styling -->
-    <div class="d-flex justify-content-between align-items-center mb-4 organic-card">
-        <div>
-            <h2 class="fw-bold mb-1" style="color: #0f172a;">Store Operations Dashboard</h2>
-            <p class="text-muted mb-0">Welcome back, <strong>{{ username }}</strong> | Role: <span class="badge bg-dark rounded-pill">{{ userRole }}</span></p>
-        </div>
-        <button ng-click="logout()" class="btn btn-outline-danger pill-button">
-            <i class="bi bi-box-arrow-right"></i> Logout
-        </button>
-    </div>
+<div class="store-dashboard" ng-controller="DashboardController" ng-cloak>
+    <div class="dashboard-shell">
 
-    <!-- Filters & Search Toolbar -->
-    <div class="organic-card mb-4 p-3">
-        <div class="row g-3 align-items-center">
-            <!-- Real-time Search -->
-            <div class="col-md-5">
-                <input type="text" ng-model="searchQuery" class="form-control pill-search" placeholder="Search by store code, name, or division...">
+        <!-- Page heading -->
+        <header class="dashboard-header">
+            <div>
+                <p class="dashboard-eyebrow">STORE OPERATIONS</p>
+                <h1>Store overview</h1>
+                <p class="dashboard-subtitle">
+                    Track your stores and keep planograms on schedule.
+                </p>
             </div>
-            <!-- Division Filter Dropdown -->
-            <div class="col-md-3">
-                <select ng-model="selectedDivision" class="form-select pill-search">
-                    <option value="">All Divisions</option>
-                    <option value="Retail">Retail</option>
-                    <option value="Express">Express</option>
-                </select>
-            </div>
-            <!-- Province Filter Dropdown -->
-            <div class="col-md-3">
-                <select ng-model="selectedProvince" class="form-select pill-search">
-                    <option value="">All Provinces</option>
-                    <option value="Gauteng">Gauteng</option>
-                    <option value="Western Cape">Western Cape</option>
-                </select>
-            </div>
-        </div>
-    </div>
 
-    <!-- Store Data Table -->
-    <div class="organic-card p-0 overflow-hidden">
-        <div v-if="isLoading" class="text-center p-5">
-            <div class="spinner-border text-warning" role="status"></div>
-            <p class="text-muted mt-2">Loading store records...</p>
+            <button
+                type="button"
+                class="dashboard-logout"
+                ng-click="logout()">
+                <i class="bi bi-box-arrow-right" aria-hidden="true"></i>
+                <span>Logout · {{ username }}</span>
+            </button>
+        </header>
+
+        <!-- Dynamic metrics -->
+        <div class="dashboard-metrics" aria-label="Store summary">
+
+            <button
+                type="button"
+                class="metric-pill"
+                ng-class="{'is-active': selectedStatus === ''}"
+                ng-click="setStatus('')"
+                ng-attr-aria-pressed="{{ selectedStatus === '' }}">
+                <span class="metric-icon metric-icon-navy">
+                    <i class="bi bi-shop" aria-hidden="true"></i>
+                </span>
+                <span class="metric-copy">
+                    <span class="metric-label">Stores</span>
+                    <span class="metric-value">{{ metrics.stores }}</span>
+                </span>
+            </button>
+
+            <button
+                type="button"
+                class="metric-pill metric-pill-overdue"
+                ng-class="{'is-active': selectedStatus === 'overdue'}"
+                ng-click="setStatus('overdue')"
+                ng-attr-aria-pressed="{{ selectedStatus === 'overdue' }}">
+                <span class="metric-icon metric-icon-crimson">
+                    <i
+                        class="bi bi-exclamation-triangle"
+                        aria-hidden="true">
+                    </i>
+                </span>
+                <span class="metric-copy">
+                    <span class="metric-label">Overdue planograms</span>
+                    <span class="metric-value">
+                        {{ metrics.overduePlanograms }}
+                    </span>
+                </span>
+                <span class="metric-context">
+                    {{ metrics.overdueStores }} stores
+                </span>
+            </button>
+
+            <button
+                type="button"
+                class="metric-pill"
+                ng-class="{'is-active': selectedStatus === 'onTime'}"
+                ng-click="setStatus('onTime')"
+                ng-attr-aria-pressed="{{ selectedStatus === 'onTime' }}">
+                <span class="metric-icon metric-icon-navy">
+                    <i class="bi bi-check2-circle" aria-hidden="true"></i>
+                </span>
+                <span class="metric-copy">
+                    <span class="metric-label">On-time stores</span>
+                    <span class="metric-value">{{ metrics.onTimeStores }}</span>
+                </span>
+            </button>
+
         </div>
 
-        <div class="table-responsive">
-            <table class="table table-custom mb-0 align-middle">
-                <thead>
-                    <tr>
-                        <th ng-click="sortBy('sStoreCode')">Store Code <i class="bi bi-arrow-down-up small"></i></th>
-                        <th ng-click="sortBy('sStoreName')">Store Name <i class="bi bi-arrow-down-up small"></i></th>
-                        <th ng-click="sortBy('sDivision')">Division <i class="bi bi-arrow-down-up small"></i></th>
-                        <th ng-click="sortBy('sProvince')">Province <i class="bi bi-arrow-down-up small"></i></th>
-                        <th ng-click="sortBy('iOverduePlanograms')">Overdue Planograms <i class="bi bi-arrow-down-up small"></i></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr ng-repeat="store in stores | filter:searchQuery | filter:{sDivision: selectedDivision} | filter:{sProvince: selectedProvince} | orderBy:sortColumn:reverseSort">
-                        <td><code>{{ store.storeCode }}</code></td>
-                        <td class="fw-semibold">{{ store.storeName }}</td>
-                        <td>{{ store.division }}</td>
-                        <td>{{ store.province }}</td>
-                        <td>
-                            <span ng-class="{'badge-overdue': store.overduePlanograms > 0, 'text-muted': store.overduePlanograms === 0}">
-                                {{ store.overduePlanograms }}
-                            </span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <!-- Single integrated card -->
+        <section class="store-card" aria-labelledby="store-directory-title">
+
+            <div class="store-card-heading">
+                <div>
+                    <p class="dashboard-eyebrow">DIRECTORY</p>
+                    <h2 id="store-directory-title">Your stores</h2>
+                </div>
+
+                <span class="record-count" role="status">
+                    {{ visibleStores.length }} of {{ stores.length }} stores
+                </span>
+            </div>
+
+            <!-- Filters and search live inside the main card -->
+            <div class="store-toolbar">
+
+                <div class="toolbar-filters">
+                    <label class="sr-only" for="division-filter">
+                        Filter by division
+                    </label>
+                    <select
+                        id="division-filter"
+                        class="toolbar-select"
+                        ng-model="selectedDivision"
+                        ng-change="refreshView()"
+                        ng-options="division for division in divisions">
+                        <option value="">All divisions</option>
+                    </select>
+
+                    <label class="sr-only" for="province-filter">
+                        Filter by province
+                    </label>
+                    <select
+                        id="province-filter"
+                        class="toolbar-select"
+                        ng-model="selectedProvince"
+                        ng-change="refreshView()"
+                        ng-options="province for province in provinces">
+                        <option value="">All provinces</option>
+                    </select>
+
+                    <label class="sr-only" for="status-filter">
+                        Filter by status
+                    </label>
+                    <select
+                        id="status-filter"
+                        class="toolbar-select"
+                        ng-model="selectedStatus"
+                        ng-change="refreshView()">
+                        <option value="">All statuses</option>
+                        <option value="overdue">Overdue</option>
+                        <option value="onTime">On time</option>
+                    </select>
+                </div>
+
+                <div class="toolbar-search">
+                    <i class="bi bi-search" aria-hidden="true"></i>
+
+                    <label class="sr-only" for="store-search">
+                        Search by store code or name
+                    </label>
+                    <input
+                        id="store-search"
+                        type="search"
+                        ng-model="searchQuery"
+                        ng-change="refreshView()"
+                        placeholder="Search store code or name..."
+                        autocomplete="off">
+                </div>
+
+                <button
+                    type="button"
+                    class="toolbar-reset"
+                    ng-click="clearFilters()"
+                    ng-disabled="!hasFilters()">
+                    Reset
+                </button>
+
+            </div>
+
+            <div class="store-table-scroll">
+                <table class="store-table" aria-label="Store directory">
+                    <thead>
+                        <tr>
+                            <th scope="col"
+                                ng-attr-aria-sort="{{ sortState('storeCode') }}">
+                                <button type="button" ng-click="sortBy('storeCode')">
+                                    Store code
+                                    <i class="bi"
+                                       ng-class="sortIcon('storeCode')"
+                                       aria-hidden="true"></i>
+                                </button>
+                            </th>
+
+                            <th scope="col"
+                                ng-attr-aria-sort="{{ sortState('storeName') }}">
+                                <button type="button" ng-click="sortBy('storeName')">
+                                    Store name
+                                    <i class="bi"
+                                       ng-class="sortIcon('storeName')"
+                                       aria-hidden="true"></i>
+                                </button>
+                            </th>
+
+                            <th scope="col"
+                                ng-attr-aria-sort="{{ sortState('division') }}">
+                                <button type="button" ng-click="sortBy('division')">
+                                    Division
+                                    <i class="bi"
+                                       ng-class="sortIcon('division')"
+                                       aria-hidden="true"></i>
+                                </button>
+                            </th>
+
+                            <th scope="col"
+                                ng-attr-aria-sort="{{ sortState('province') }}">
+                                <button type="button" ng-click="sortBy('province')">
+                                    Province
+                                    <i class="bi"
+                                       ng-class="sortIcon('province')"
+                                       aria-hidden="true"></i>
+                                </button>
+                            </th>
+
+                            <th scope="col"
+                                class="numeric-column"
+                                ng-attr-aria-sort="{{ sortState('overduePlanograms') }}">
+                                <button
+                                    type="button"
+                                    ng-click="sortBy('overduePlanograms')">
+                                    Overdue
+                                    <i class="bi"
+                                       ng-class="sortIcon('overduePlanograms')"
+                                       aria-hidden="true"></i>
+                                </button>
+                            </th>
+
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr ng-if="isLoading">
+                            <td colspan="6" class="table-message" role="status">
+                                Loading your stores…
+                            </td>
+                        </tr>
+
+                        <tr ng-if="!isLoading && errorMessage">
+                            <td colspan="6" class="table-message" role="alert">
+                                <p>{{ errorMessage }}</p>
+                                <button
+                                    type="button"
+                                    class="retry-button"
+                                    ng-click="loadStores()">
+                                    Try again
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr
+                            ng-repeat="store in visibleStores
+                                | orderBy:sortColumn:reverseSort"
+                            ng-class="{
+                                'store-row-overdue': store.overduePlanograms > 0
+                            }">
+
+                            <td>
+                                <span class="store-code">
+                                    {{ store.storeCode }}
+                                </span>
+                            </td>
+
+                            <td>
+                                <div class="store-name-cell">
+                                    <span class="store-avatar" aria-hidden="true">
+                                        {{ store.storeName.charAt(0) || 'S' }}
+                                    </span>
+                                    <span class="store-name">
+                                        {{ store.storeName }}
+                                    </span>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="division-badge">
+                                    {{ store.division || '—' }}
+                                </span>
+                            </td>
+
+                            <td>{{ store.province || '—' }}</td>
+
+                            <td class="numeric-column">
+                                <span
+                                    class="overdue-count"
+                                    ng-class="{
+                                        'has-overdue': store.overduePlanograms > 0
+                                    }">
+                                    {{ store.overduePlanograms }}
+                                </span>
+                            </td>
+
+                            <td>
+                                <span
+                                    class="status-badge"
+                                    ng-class="{
+                                        'status-overdue': store.overduePlanograms > 0,
+                                        'status-on-time': store.overduePlanograms === 0
+                                    }">
+                                    <span class="status-dot" aria-hidden="true"></span>
+                                    {{ store.overduePlanograms > 0
+                                        ? 'Overdue' : 'On time' }}
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr ng-if="!isLoading
+                                   && !errorMessage
+                                   && visibleStores.length === 0">
+                            <td colspan="6" class="table-message">
+                                No matching stores found.
+                                <button
+                                    type="button"
+                                    class="inline-reset"
+                                    ng-if="hasFilters()"
+                                    ng-click="clearFilters()">
+                                    Clear filters
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <footer class="store-card-footer">
+                <span>
+                    <span class="footer-dot" aria-hidden="true"></span>
+                    {{ metrics.onTimeStores }} of {{ metrics.stores }}
+                    stores have no overdue planograms
+                </span>
+                <span>Click a column heading to sort</span>
+            </footer>
+
+        </section>
     </div>
 </div>

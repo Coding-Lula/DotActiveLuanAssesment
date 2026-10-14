@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|c:\\users\\emeris\\source\\repos\\luanassesment\\luanassesment\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|solutionrelative:luanassesment\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\emeris\\AppData\\Local\\Temp\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
     },
     {
@@ -12,10 +16,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|c:\\users\\emeris\\source\\repos\\luanassesment\\luanassesment\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|solutionrelative:luanassesment\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|c:\\users\\emeris\\source\\repos\\luanassesment\\luanassesment\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|solutionrelative:luanassesment\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|c:\\users\\emeris\\source\\repos\\luanassesment\\luanassesment\\luanassesment.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -45,11 +45,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SQLQuery1.sql ",
               "DocumentMoniker": "C:\\Users\\emeris\\AppData\\Local\\Temp\\SQLQuery1.sql",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\SQLQuery1.sql",
@@ -60,13 +60,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "LuanAssesment\\Properties\\launchSettings.json",
               "ToolTip": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Properties\\launchSettings.json",
               "RelativeToolTip": "LuanAssesment\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-10-14T15:03:02.984Z",
               "EditorCaption": ""
@@ -99,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Program.cs",
               "RelativeDocumentMoniker": "LuanAssesment\\Program.cs",
@@ -112,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\appsettings.json",
               "RelativeDocumentMoniker": "LuanAssesment\\appsettings.json",
