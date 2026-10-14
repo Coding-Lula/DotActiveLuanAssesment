@@ -1,0 +1,28 @@
+<!-- views/login.html -->
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="organic-card p-4" style="width: 100%; max-width: 420px;">
+        <div class="text-center mb-4">
+            <h3 class="fw-bold" style="color: #0f172a;">DotActiv Portal</h3>
+            <p class="text-muted small">Sign in to access your provincial store dashboard</p>
+        </div>
+
+        <div ng-if="errorMessage" class="alert alert-danger pill-button text-center py-2 mb-3 small">
+            {{ errorMessage }}
+        </div>
+
+        <form ng-submit="login()">
+            <div class="mb-3">
+                <label class="form-label text-muted small fw-semibold">Username</label>
+                <input type="text" ng-model="credentials.username" class="form-control pill-search" required placeholder="Enter username">
+            </div>
+            <div class="mb-4">
+                <label class="form-label text-muted small fw-semibold">Password</label>
+                <input type="password" ng-model="credentials.password" class="form-control pill-search" required placeholder="Enter password">
+            </div>
+            <button type="submit" class="btn btn-dark w-100 pill-button py-2" ng-disabled="isLoading">
+                <span ng-if="isLoading" class="spinner-border spinner-border-sm me-2"></span>
+                Sign In
+            </button>
+        </form>
+    </div>
+</div>

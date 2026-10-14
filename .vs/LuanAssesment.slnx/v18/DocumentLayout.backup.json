@@ -6,11 +6,11 @@
       "AbsoluteMoniker": "D:0:0:{7BFDC78C-AA64-0E09-D15A-BBABA1258F8F}|..\\LuanAssesmentTests\\LuanAssesmentTests\\LuanAssesmentTests.csproj|c:\\users\\emeris\\source\\repos\\luanassesmenttests\\luanassesmenttests\\luanassesmenttests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|c:\\users\\emeris\\source\\repos\\luanassesment\\luanassesment\\luanassesment.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|solutionrelative:luanassesment\\luanassesment.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7BFDC78C-AA64-0E09-D15A-BBABA1258F8F}|..\\LuanAssesmentTests\\LuanAssesmentTests\\LuanAssesmentTests.csproj|c:\\users\\emeris\\source\\repos\\luanassesmenttests\\luanassesmenttests\\storerepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BFDC78C-AA64-0E09-D15A-BBABA1258F8F}|..\\LuanAssesmentTests\\LuanAssesmentTests\\LuanAssesmentTests.csproj|c:\\users\\emeris\\source\\repos\\luanassesmenttests\\luanassesmenttests\\storerepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|c:\\users\\emeris\\source\\repos\\luanassesment\\luanassesment\\luanassesment.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|solutionrelative:luanassesment\\luanassesment.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|c:\\users\\emeris\\source\\repos\\luanassesment\\luanassesment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -32,13 +32,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LuanAssesment",
+              "DocumentIndex": 2,
+              "Title": "LuanAssesment.csproj",
               "DocumentMoniker": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\LuanAssesment.csproj",
               "RelativeDocumentMoniker": "LuanAssesment\\LuanAssesment.csproj",
               "ToolTip": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\LuanAssesment.csproj",
               "RelativeToolTip": "LuanAssesment\\LuanAssesment.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-10-14T13:21:55.705Z",
               "EditorCaption": ""
@@ -46,28 +46,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LuanAssesmentTests",
+              "Title": "LuanAssesmentTests.csproj",
               "DocumentMoniker": "C:\\Users\\emeris\\source\\repos\\LuanAssesmentTests\\LuanAssesmentTests\\LuanAssesmentTests.csproj",
               "RelativeDocumentMoniker": "..\\LuanAssesmentTests\\LuanAssesmentTests\\LuanAssesmentTests.csproj",
               "ToolTip": "C:\\Users\\emeris\\source\\repos\\LuanAssesmentTests\\LuanAssesmentTests\\LuanAssesmentTests.csproj",
               "RelativeToolTip": "..\\LuanAssesmentTests\\LuanAssesmentTests\\LuanAssesmentTests.csproj",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-10-14T13:02:20.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "StoreRepositoryTests.cs",
               "DocumentMoniker": "C:\\Users\\emeris\\source\\repos\\LuanAssesmentTests\\LuanAssesmentTests\\StoreRepositoryTests.cs",
               "RelativeDocumentMoniker": "..\\LuanAssesmentTests\\LuanAssesmentTests\\StoreRepositoryTests.cs",
               "ToolTip": "C:\\Users\\emeris\\source\\repos\\LuanAssesmentTests\\LuanAssesmentTests\\StoreRepositoryTests.cs",
               "RelativeToolTip": "..\\LuanAssesmentTests\\LuanAssesmentTests\\StoreRepositoryTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T12:41:16.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T12:41:16.992Z"
             },
             {
               "$type": "Document",
@@ -79,8 +78,7 @@
               "RelativeToolTip": "LuanAssesment\\Program.cs",
               "ViewState": "AgIAABsAAAAA/v////8PwAEAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T11:58:54.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T11:58:54.226Z"
             },
             {
               "$type": "Document",

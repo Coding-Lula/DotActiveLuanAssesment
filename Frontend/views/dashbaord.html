@@ -1,0 +1,73 @@
+<div class="container py-4">
+    <!-- Header Section with Pill Styling -->
+    <div class="d-flex justify-content-between align-items-center mb-4 organic-card">
+        <div>
+            <h2 class="fw-bold mb-1" style="color: #0f172a;">Store Operations Dashboard</h2>
+            <p class="text-muted mb-0">Welcome back, <strong>{{ username }}</strong> | Role: <span class="badge bg-dark rounded-pill">{{ userRole }}</span></p>
+        </div>
+        <button ng-click="logout()" class="btn btn-outline-danger pill-button">
+            <i class="bi bi-box-arrow-right"></i> Logout
+        </button>
+    </div>
+
+    <!-- Filters & Search Toolbar -->
+    <div class="organic-card mb-4 p-3">
+        <div class="row g-3 align-items-center">
+            <!-- Real-time Search -->
+            <div class="col-md-5">
+                <input type="text" ng-model="searchQuery" class="form-control pill-search" placeholder="Search by store code, name, or division...">
+            </div>
+            <!-- Division Filter Dropdown -->
+            <div class="col-md-3">
+                <select ng-model="selectedDivision" class="form-select pill-search">
+                    <option value="">All Divisions</option>
+                    <option value="Retail">Retail</option>
+                    <option value="Express">Express</option>
+                </select>
+            </div>
+            <!-- Province Filter Dropdown -->
+            <div class="col-md-3">
+                <select ng-model="selectedProvince" class="form-select pill-search">
+                    <option value="">All Provinces</option>
+                    <option value="Gauteng">Gauteng</option>
+                    <option value="Western Cape">Western Cape</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Store Data Table -->
+    <div class="organic-card p-0 overflow-hidden">
+        <div v-if="isLoading" class="text-center p-5">
+            <div class="spinner-border text-warning" role="status"></div>
+            <p class="text-muted mt-2">Loading store records...</p>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-custom mb-0 align-middle">
+                <thead>
+                    <tr>
+                        <th ng-click="sortBy('sStoreCode')">Store Code <i class="bi bi-arrow-down-up small"></i></th>
+                        <th ng-click="sortBy('sStoreName')">Store Name <i class="bi bi-arrow-down-up small"></i></th>
+                        <th ng-click="sortBy('sDivision')">Division <i class="bi bi-arrow-down-up small"></i></th>
+                        <th ng-click="sortBy('sProvince')">Province <i class="bi bi-arrow-down-up small"></i></th>
+                        <th ng-click="sortBy('iOverduePlanograms')">Overdue Planograms <i class="bi bi-arrow-down-up small"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="store in stores | filter:searchQuery | filter:{sDivision: selectedDivision} | filter:{sProvince: selectedProvince} | orderBy:sortColumn:reverseSort">
+                        <td><code>{{ store.storeCode }}</code></td>
+                        <td class="fw-semibold">{{ store.storeName }}</td>
+                        <td>{{ store.division }}</td>
+                        <td>{{ store.province }}</td>
+                        <td>
+                            <span ng-class="{'badge-overdue': store.overduePlanograms > 0, 'text-muted': store.overduePlanograms === 0}">
+                                {{ store.overduePlanograms }}
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
