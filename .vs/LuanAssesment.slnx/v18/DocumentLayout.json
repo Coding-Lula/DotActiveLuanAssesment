@@ -3,10 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BFDC78C-AA64-0E09-D15A-BBABA1258F8F}|..\\LuanAssesmentTests\\LuanAssesmentTests\\LuanAssesmentTests.csproj|c:\\users\\emeris\\source\\repos\\luanassesmenttests\\luanassesmenttests\\luanassesmenttests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7BFDC78C-AA64-0E09-D15A-BBABA1258F8F}|..\\LuanAssesmentTests\\LuanAssesmentTests\\LuanAssesmentTests.csproj|c:\\users\\emeris\\source\\repos\\luanassesmenttests\\luanassesmenttests\\storerepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BFDC78C-AA64-0E09-D15A-BBABA1258F8F}|..\\LuanAssesmentTests\\LuanAssesmentTests\\LuanAssesmentTests.csproj|c:\\users\\emeris\\source\\repos\\luanassesmenttests\\luanassesmenttests\\storerepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BFDC78C-AA64-0E09-D15A-BBABA1258F8F}|..\\LuanAssesmentTests\\LuanAssesmentTests\\LuanAssesmentTests.csproj|c:\\users\\emeris\\source\\repos\\luanassesmenttests\\luanassesmenttests\\luanassesmenttests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|c:\\users\\emeris\\source\\repos\\luanassesment\\luanassesment\\luanassesment.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -28,7 +28,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -38,35 +38,36 @@
               "RelativeDocumentMoniker": "LuanAssesment\\LuanAssesment.csproj",
               "ToolTip": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\LuanAssesment.csproj",
               "RelativeToolTip": "LuanAssesment\\LuanAssesment.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-10-14T13:21:55.705Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LuanAssesmentTests.csproj",
               "DocumentMoniker": "C:\\Users\\emeris\\source\\repos\\LuanAssesmentTests\\LuanAssesmentTests\\LuanAssesmentTests.csproj",
               "RelativeDocumentMoniker": "..\\LuanAssesmentTests\\LuanAssesmentTests\\LuanAssesmentTests.csproj",
               "ToolTip": "C:\\Users\\emeris\\source\\repos\\LuanAssesmentTests\\LuanAssesmentTests\\LuanAssesmentTests.csproj",
               "RelativeToolTip": "..\\LuanAssesmentTests\\LuanAssesmentTests\\LuanAssesmentTests.csproj",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwA0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-10-14T13:02:20.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "StoreRepositoryTests.cs",
               "DocumentMoniker": "C:\\Users\\emeris\\source\\repos\\LuanAssesmentTests\\LuanAssesmentTests\\StoreRepositoryTests.cs",
               "RelativeDocumentMoniker": "..\\LuanAssesmentTests\\LuanAssesmentTests\\StoreRepositoryTests.cs",
               "ToolTip": "C:\\Users\\emeris\\source\\repos\\LuanAssesmentTests\\LuanAssesmentTests\\StoreRepositoryTests.cs",
               "RelativeToolTip": "..\\LuanAssesmentTests\\LuanAssesmentTests\\StoreRepositoryTests.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T12:41:16.992Z"
+              "WhenOpened": "2026-10-14T12:41:16.992Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
