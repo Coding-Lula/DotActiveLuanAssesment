@@ -1,4 +1,6 @@
 
+using LuanAssesment.Middleware;
+
 namespace LuanAssesment
 {
     public class Program
@@ -10,6 +12,7 @@ namespace LuanAssesment
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddExceptionHandler<GlobalExceptionHandler>(); builder.Services.AddProblemDetails();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 

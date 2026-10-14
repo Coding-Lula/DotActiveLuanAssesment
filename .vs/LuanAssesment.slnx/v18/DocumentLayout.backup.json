@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4436B2D8-55A4-4FA8-BAC8-B665F99302EE}|LuanAssesment\\LuanAssesment.csproj|c:\\users\\emeris\\source\\repos\\luanassesment\\luanassesment\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4436B2D8-55A4-4FA8-BAC8-B665F99302EE}|LuanAssesment\\LuanAssesment.csproj|solutionrelative:luanassesment\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|c:\\users\\emeris\\source\\repos\\luanassesment\\luanassesment\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|solutionrelative:luanassesment\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4436B2D8-55A4-4FA8-BAC8-B665F99302EE}|LuanAssesment\\LuanAssesment.csproj|c:\\users\\emeris\\source\\repos\\luanassesment\\luanassesment\\entities\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4436B2D8-55A4-4FA8-BAC8-B665F99302EE}|LuanAssesment\\LuanAssesment.csproj|solutionrelative:luanassesment\\entities\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|c:\\users\\emeris\\source\\repos\\luanassesment\\luanassesment\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|solutionrelative:luanassesment\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4436B2D8-55A4-4FA8-BAC8-B665F99302EE}|LuanAssesment\\LuanAssesment.csproj|c:\\users\\emeris\\source\\repos\\luanassesment\\luanassesment\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4436B2D8-55A4-4FA8-BAC8-B665F99302EE}|LuanAssesment\\LuanAssesment.csproj|solutionrelative:luanassesment\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|c:\\users\\emeris\\source\\repos\\luanassesment\\luanassesment\\middleware\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|solutionrelative:luanassesment\\middleware\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4436B2D8-55A4-4FA8-BAC8-B665F99302EE}|LuanAssesment\\LuanAssesment.csproj|c:\\users\\emeris\\source\\repos\\luanassesment\\luanassesment\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4436B2D8-55A4-4FA8-BAC8-B665F99302EE}|LuanAssesment\\LuanAssesment.csproj|solutionrelative:luanassesment\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|c:\\users\\emeris\\source\\repos\\luanassesment\\luanassesment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|solutionrelative:luanassesment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|c:\\users\\emeris\\source\\repos\\luanassesment\\luanassesment\\repositories\\storerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA9921C-54C8-17D4-BAE0-772E6A1ED5CA}|LuanAssesment\\LuanAssesment.csproj|solutionrelative:luanassesment\\repositories\\storerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "LuanAssesment\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "LuanAssesment\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAEAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Program.cs",
+              "RelativeDocumentMoniker": "LuanAssesment\\Program.cs",
+              "ToolTip": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Program.cs",
+              "RelativeToolTip": "LuanAssesment\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T11:27:54.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Store.cs",
-              "DocumentMoniker": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Entities\\Store.cs",
-              "RelativeDocumentMoniker": "LuanAssesment\\Entities\\Store.cs",
-              "ToolTip": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Entities\\Store.cs",
-              "RelativeToolTip": "LuanAssesment\\Entities\\Store.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T11:24:18.464Z",
+              "WhenOpened": "2026-10-14T11:58:54.226Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Entities\\Role.cs",
-              "RelativeDocumentMoniker": "LuanAssesment\\Entities\\Role.cs",
-              "ToolTip": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Entities\\Role.cs",
-              "RelativeToolTip": "LuanAssesment\\Entities\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABIAAAAAAAAAA==",
+              "Title": "GlobalExceptionHandler.cs",
+              "DocumentMoniker": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Middleware\\GlobalExceptionHandler.cs",
+              "RelativeDocumentMoniker": "LuanAssesment\\Middleware\\GlobalExceptionHandler.cs",
+              "ToolTip": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Middleware\\GlobalExceptionHandler.cs",
+              "RelativeToolTip": "LuanAssesment\\Middleware\\GlobalExceptionHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T11:24:10.878Z",
+              "WhenOpened": "2026-10-14T11:58:21.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "LuanAssesment\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Entities\\User.cs",
-              "RelativeToolTip": "LuanAssesment\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "StoreController.cs",
+              "DocumentMoniker": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Controllers\\StoreController.cs",
+              "RelativeDocumentMoniker": "LuanAssesment\\Controllers\\StoreController.cs",
+              "ToolTip": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Controllers\\StoreController.cs",
+              "RelativeToolTip": "LuanAssesment\\Controllers\\StoreController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T11:23:43.028Z",
+              "WhenOpened": "2026-10-14T11:56:46.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "LuanAssesment\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "LuanAssesment\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACAAAAAAZmZmZmYawAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T11:53:13.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StoreRepository.cs",
+              "DocumentMoniker": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Repositories\\StoreRepository.cs",
+              "RelativeDocumentMoniker": "LuanAssesment\\Repositories\\StoreRepository.cs",
+              "ToolTip": "C:\\Users\\emeris\\source\\repos\\LuanAssesment\\LuanAssesment\\Repositories\\StoreRepository.cs",
+              "RelativeToolTip": "LuanAssesment\\Repositories\\StoreRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T11:44:06.939Z",
               "EditorCaption": ""
             }
           ]
