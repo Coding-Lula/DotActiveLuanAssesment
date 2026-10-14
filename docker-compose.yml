@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: dotactiv_sql_server
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrongPassword123!
+    ports:
+      - "1433:1433"
+    volumes:
+      - mssql_data:/var/opt/mssql
+    restart: always
+
+  backend:
+    build:
+      context: ./LuanAssesment
+      dockerfile: Dockerfile
+    container_name: dotactiv_api
+    ports:
+      - "5000:8080"
+      - "5001:8081"
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=db,1433;Database=DotActivDashboard;User Id=sa;Password=YourStrongPassword123!;TrustServerCertificate=True;
+      - Jwt__Key=SuperSecretKeyForDotActivAssessment123!
+    depends_on:
+      - db
+    restart: always
+
+volumes:
+  mssql_data:
