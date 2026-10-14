@@ -7,7 +7,7 @@
         $scope.isLoading = true;
         $scope.errorMessage = '';
 
-        $http.post('https://localhost:5001/api/auth/login', $scope.credentials)
+        $http.post('http://localhost:5154/api/auth/login', $scope.credentials)
             .then(function (response) {
                 $scope.isLoading = false;
                 localStorage.setItem('jwt_token', response.data.token);

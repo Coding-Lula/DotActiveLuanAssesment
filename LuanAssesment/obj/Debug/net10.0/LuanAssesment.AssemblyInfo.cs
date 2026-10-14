@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LuanAssesment")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+817716a364fd8f8ec1e830512407b9ec5c2f622c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abe509b1cf943af69d29e8bc4ce4752ba788b9e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("LuanAssesment")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LuanAssesment")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

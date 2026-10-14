@@ -10,7 +10,7 @@
 
     // Fetch stores authorized for this user's role
     function loadStores() {
-        $http.get('https://localhost:5001/api/stores')
+        $http.get('http://localhost:5154/api/stores')
             .then(function (response) {
                 $scope.stores = response.data;
                 $scope.isLoading = false;

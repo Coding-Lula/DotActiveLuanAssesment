@@ -1,2 +1,71 @@
-﻿body {
+﻿:root {
+    --dotactiv-dark: #0f172a;
+    --dotactiv-card-bg: #1e293b;
+    --dotactiv-yellow: #facc15;
+    --dotactiv-lime: #10b981;
+    --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+body {
+    background: var(--bg-gradient);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #334155;
+    min-height: 100vh;
+}
+
+/* Pill-shaped controls and badges */
+.pill-button, .btn-pill {
+    border-radius: 50rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.pill-search {
+    border-radius: 50rem;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid #cbd5e1;
+    background-color: #ffffff;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+}
+
+/* Unconventional card shapes / organic modern slope containers */
+.organic-card {
+    background: #ffffff;
+    border-radius: 2rem 1.5rem 2.5rem 1.5rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    padding: 2rem;
+}
+
+.top-metric-pill {
+    background: var(--dotactiv-dark);
+    color: #ffffff;
+    border-radius: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
+/* Custom table styling */
+.table-custom th {
+    background-color: #f1f5f9;
+    color: #475569;
+    font-weight: 600;
+    border-top: none;
+    cursor: pointer;
+}
+
+.table-custom tr {
+    transition: background-color 0.15s ease;
+}
+
+.table-custom tr:hover {
+    background-color: #f8fafc;
+}
+
+.badge-overdue {
+    background-color: #ffeeee;
+    color: #dc2626;
+    border-radius: 50rem;
+    padding: 0.3rem 0.8rem;
+    font-weight: 600;
 }
