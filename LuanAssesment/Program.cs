@@ -88,7 +88,10 @@ namespace LuanAssesment
                 app.UseSwaggerUI();
             }
 
-            app.UseHttpsRedirection();
+            if (!app.Environment.IsDevelopment())
+            {
+                app.UseHttpsRedirection();
+            }
 
             // Enable CORS middleware
             app.UseCors("AllowFrontend");
@@ -97,6 +100,10 @@ namespace LuanAssesment
             app.UseAuthorization();
 
             app.MapControllers();
+
+
+            app.UseDefaultFiles();   
+            app.UseStaticFiles();
 
             app.Run();
         }
